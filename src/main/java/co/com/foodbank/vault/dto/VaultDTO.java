@@ -9,12 +9,12 @@ import co.com.foodbank.address.dto.AddressDTO;
 public class VaultDTO {
 
     @NotNull
-    @NotBlank
-    @Size(min = 8, max = 20)
+    @NotBlank(message = "Phone must be completed.")
+    @Size(min = 8, max = 20, message = "Phone must be between 8 and 20 digits.")
     public String phones;
 
     @NotNull
-    @NotBlank
+    @NotBlank(message = "Contact must be completed. ")
     public String contact;
 
     @Valid
