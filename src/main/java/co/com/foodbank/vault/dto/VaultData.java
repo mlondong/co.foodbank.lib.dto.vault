@@ -3,7 +3,7 @@ package co.com.foodbank.vault.dto;
 import java.util.Collection;
 import co.com.foodbank.address.dto.Address;
 import co.com.foodbank.address.dto.IAddress;
-import co.com.foodbank.contribution.dto.IContribution;
+import co.com.foodbank.contribution.dto.ContributionData;
 
 public class VaultData {
 
@@ -15,7 +15,8 @@ public class VaultData {
 
     private String contact;
 
-    private Collection<IContribution> contribution;
+    // private Collection<IContribution> contribution;
+    private Collection<ContributionData> contribution;
 
 
     public VaultData() {
@@ -33,7 +34,7 @@ public class VaultData {
 
 
     public VaultData(Address address, String phones, String contact,
-            Collection<IContribution> contribution) {
+            Collection<ContributionData> contribution) {
         this.address = address;
         this.phones = phones;
         this.contact = contact;
@@ -64,11 +65,11 @@ public class VaultData {
         this.contact = contact;
     }
 
-    public Collection<IContribution> getContribution() {
+    public Collection<ContributionData> getContribution() {
         return contribution;
     }
 
-    public void setContribution(Collection<IContribution> contribution) {
+    public void setContribution(Collection<ContributionData> contribution) {
         this.contribution = contribution;
     }
 
