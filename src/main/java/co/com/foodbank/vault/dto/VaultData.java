@@ -3,7 +3,7 @@ package co.com.foodbank.vault.dto;
 import java.util.Collection;
 import co.com.foodbank.address.dto.Address;
 import co.com.foodbank.address.dto.IAddress;
-import co.com.foodbank.contribution.dto.ContributionData;
+import co.com.foodbank.contribution.state.ContributionData;
 
 public class VaultData {
 
