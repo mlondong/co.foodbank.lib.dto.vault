@@ -15,7 +15,6 @@ public class VaultData {
 
     private String contact;
 
-    // private Collection<IContribution> contribution;
     private Collection<ContributionData> contribution;
 
 
