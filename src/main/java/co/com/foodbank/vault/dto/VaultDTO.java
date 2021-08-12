@@ -5,7 +5,16 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import co.com.foodbank.address.dto.AddressDTO;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+/**
+ * @author mauricio.londono@gmail.com co.com.foodbank.vault.dto 11/08/2021
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class VaultDTO {
 
     @NotNull
@@ -19,63 +28,6 @@ public class VaultDTO {
 
     @Valid
     public AddressDTO address;
-
-
-
-    public VaultDTO() {}
-
-
-
-    public VaultDTO(AddressDTO address, String phones, String contact) {
-        this.address = address;
-        this.phones = phones;
-        this.contact = contact;
-    }
-
-
-
-    public AddressDTO getAddress() {
-        return address;
-    }
-
-
-
-    public void setAddress(AddressDTO address) {
-        this.address = address;
-    }
-
-
-
-    public String getPhones() {
-        return phones;
-    }
-
-
-
-    public void setPhones(String phones) {
-        this.phones = phones;
-    }
-
-
-
-    public String getContact() {
-        return contact;
-    }
-
-
-
-    public void setContact(String contact) {
-        this.contact = contact;
-    }
-
-
-
-    @Override
-    public String toString() {
-        return "VaultDTO [phones=" + phones + ", contact=" + contact
-                + ", address=" + address + "]";
-    }
-
 
 
 }
