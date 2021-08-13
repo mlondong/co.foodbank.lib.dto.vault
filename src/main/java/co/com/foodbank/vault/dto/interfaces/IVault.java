@@ -1,8 +1,8 @@
-package co.com.foodbank.vault.interfaces;
+package co.com.foodbank.vault.dto.interfaces;
 
 import java.util.Collection;
-import co.com.foodbank.address.interfaces.IAddress;
-import co.com.foodbank.contribution.interfaces.IContribution;
+import co.com.foodbank.address.dto.interfaces.IAddress;
+import co.com.foodbank.contribution.dto.interfaces.IContribution;
 
 
 /**
